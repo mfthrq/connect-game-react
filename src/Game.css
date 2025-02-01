@@ -1,0 +1,14 @@
+.gameBoard{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(4, 1fr);
+    padding: 20px; 
+    width: 500px;
+}
+
+.gameCircle{
+    width: 100px; 
+    height: 100px; 
+    margin: 10px;
+    border-radius: 50%;
+}

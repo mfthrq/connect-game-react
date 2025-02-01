@@ -1,10 +1,16 @@
-const onClick = () => {
-    alert("OnClick");
+import '../Game.css';
+
+const onClick = (ev, id) => {
+    alert("OnClick " + id);
 }
 
-const GameCircle = ({id, children}) => {
+const GameCircle = ({id, color, children}) => {
+    const style = {
+        backgroundColor: color
+    }
+
     return (
-        <div>
+        <div style={style} className='gameCircle' onClick={(ev) => onClick(ev, id, value)}>
             {children}
         </div>
     )
